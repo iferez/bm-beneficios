@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficios test</title>
+    <link rel="stylesheet" href="css/Application_macro.css">
+    <link rel="stylesheet" href="css/Application_Macro_Accesos.css">
+    <link rel="stylesheet" href="css/Application_macro_beneficios.css">
+    <link rel="stylesheet" href="css/Application_macro_custom.css">
+    <link rel="stylesheet" href="css/Application_macro_custom_user_styles.css">
+    <link rel="stylesheet" href="css/Application_macro_header.css">
+    <link rel="stylesheet" href="css/Application_macro_operaciones_simples.css">
+    <link rel="stylesheet" href="css/cardsStyleSheet.css">
+    <link rel="stylesheet" href="css/FormPoincenotStyleSheet.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/jqueryuicss.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/vendors.css">
+
+</head>
+
+<body id="page-top"
+    class=" index mc-home mc-transparent mc-no-homebanking  mc-personas mc-home-no-mw mc-transparent-menu mc-header-bluelight">
+    <div id="ZN_2mgvsS6i0OY4z5A"><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+    <!--  ...   -->
+
+    <!--END WEBSITE FEEDBACK SNIPPET-->
+
+
+
+
+    <script type="text/javascript" src="aplicationmacrobeneficios.js"></script>
+
+    <div class="mc-main-content mc-operaciones mc-beneficios">
+
+        <!-- ***********   TITULO PRINCIPAL     ***********  -->
+        <style>
+            #page-header h1 {
+                width: 100%;
+                font-size: 40px;
+                color: #053575;
+                margin: 32px 0px;
+                text-align: center;
+            }
+        </style>
+
+        <section class="mc-banner-beneficios no-padding section-beneficios" id="page-header">
+            <h1>Con Macro, tenés más beneficios</h1>
+        </section>
+
+
+        <!-- ***********   BUSCADOR     ***********  -->
+        <style>
+            .ui-menu {
+                max-height: 300px;
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+        </style>
+
+        <section class="section-beneficios" id="buscador-beneficios">
+            <div class="container">
+                <form id="bm-beneficios-form" class="row" action="/beneficios/resultados">
+                    <div class="col-md-8 col-xl-9">
+                        <input type="text" name="beneficios" placeholder="Buscá por nombre de comercio" id="buscar"
+                            class="ui-autocomplete-input" autocomplete="off">
+                    </div>
+
+                    <div class="col-md-4 col-xl-3">
+                        <button class="btn-ubicacion" type="button"><img
+                                src="https://bm-preview:7443//imagen/bm-icono-geo.png" alt="Icono geo"> Mi ubicación
+                            actual</button>
+                    </div>
+
+
+
+                    <div class="col-3">
+                        <select name="ubicacion" id="ubicacion" class="custom-select">
+                            <option value="" disabled selected hidden>Provincia</option>
+                            <option value="CAPITAL FEDERAL">CAPITAL FEDERAL</option>
+                            <option value="BUENOS AIRES">BUENOS AIRES</option>
+                            <option value="CATAMARCA">CATAMARCA</option>
+                            <option value="CHACO">CHACO</option>
+                            <option value="CHUBUT">CHUBUT</option>
+                            <option value="CORDOBA">CORDOBA</option>
+                            <option value="CORRIENTES">CORRIENTES</option>
+                            <option value="ENTRE RIOS">ENTRE RIOS</option>
+                            <option value="FORMOSA">FORMOSA</option>
+                            <option value="JUJUY">JUJUY</option>
+                            <option value="LA PAMPA">LA PAMPA</option>
+                            <option value="LA RIOJA">LA RIOJA</option>
+                            <option value="MENDOZA">MENDOZA</option>
+                            <option value="MISIONES">MISIONES</option>
+                            <option value="NEUQUEN">NEUQUEN</option>
+                            <option value="RIO NEGRO">RIO NEGRO</option>
+                            <option value="SALTA">SALTA</option>
+                            <option value="SAN JUAN">SAN JUAN</option>
+                            <option value="SAN LUIS">SAN LUIS</option>
+                            <option value="SANTA CRUZ">SANTA CRUZ</option>
+                            <option value="SANTA FE">SANTA FE</option>
+                            <option value="SANTIAGO DEL ESTERO">Santiago Del Estero</option>
+                            <option value="TIERRA DEL FUEGO">TIERRA DEL FUEGO</option>
+                            <option value="TUCUMAN">TUCUMAN</option>
+                        </select>
+                    </div>
+
+                    <div class="col-3">
+                        <input type="text" name="localidad" placeholder="Localidad" value="" id="localidad"
+                            class="ui-autocomplete-input" autocomplete="off">
+                    </div>
+
+                    <div class="col-2">
+                        <select name="dia-semana" id="dia-semana">
+                            <option value="" disabled selected hidden>Día</option>
+                            <option value="7">Todos los días</option>
+                            <option value="8">Hoy</option>
+                            <option value="1">Lunes </option>
+                            <option value="2">Martes </option>
+                            <option value="3">Miércoles </option>
+                            <option value="4">Jueves </option>
+                            <option value="5">Viernes </option>
+                            <option value="6">Sábado </option>
+                            <option value="0">Domingo </option>
+                        </select>
+                    </div>
+
+                    <div class="col-3">
+                        <select name="tarjeta" id="tarjeta">
+                            <option value="" disabled selected hidden>Tarjeta</option>
+                            <option value="">Todas las Tarjetas</option>
+                            <option value="TD">Tarjeta de Debito</option>
+                            <option value="TC">Tarjeta de Crédito</option>
+                        </select>
+                    </div>
+
+                    <div class="col-1">
+                        <button type="submit" class="btn btn-navy-main">Buscar</button>
+                    </div>
+
+                    <!-- <label>
+                        <select name="categoria" id="categoria">
+                            <option value="All">Todos los rubros</option>
+                            <option value="Asociación de Profesionales">Asociación de Profesionales</option>
+                            <option value="Automotor y Combustible">Automotor y Combustible</option>
+                            <option value="Barrios Privados">Barrios Privados</option>
+                            <option value="Cajas Previsionales">Cajas Previsionales</option>
+                            <option value="Circuito Gastronómico">Circuito Gastronómico</option>
+                            <option value="Clubes">Clubes</option>
+                            <option value="Compras Online">Compras Online</option>
+                            <option value="Consorcio - Administración">Consorcio - Administración</option>
+                            <option value="Débito Automático">Débito Automático</option>
+                            <option value="Dia de la Madre">Dia de la Madre</option>
+                            <option value="Día Del Niño">Día Del Niño</option>
+                            <option value="Día Del Padre">Día Del Padre</option>
+                            <option value="Electro y Tecnología">Electro y Tecnología</option>
+                            <option value="Entretenimiento y Cine">Entretenimiento y Cine</option>
+                            <option value="Espectáculos">Espectáculos</option>
+                            <option value="Fiestas">Fiestas</option>
+                            <option value="Gastronomía">Gastronomía</option>
+                            <option value="Heladerías">Heladerías</option>
+                            <option value="Hogar y Deco">Hogar y Deco</option>
+                            <option value="Hotelería">Hotelería</option>
+                            <option value="Indumentaria">Indumentaria</option>
+                            <option value="Instituciones Deportivas">Instituciones Deportivas</option>
+                            <option value="Instituciones Educativas">Instituciones Educativas</option>
+                            <option value="Librerías">Librerías</option>
+                            <option value="Niños y Jugueterías">Niños y Jugueterías</option>
+                            <option value="Otros beneficios">Otros beneficios</option>
+                            <option value="Paradores">Paradores</option>
+                            <option value="Pinturería">Pinturería</option>
+                            <option value="Profesionales">Profesionales</option>
+                            <option value="Salud y belleza">Salud y belleza</option>
+                            <option value="Selecta Gourmet">Selecta Gourmet</option>
+                            <option value="Shoppings y Tiendas">Shoppings y Tiendas</option>
+                            <option value="Supermercados">Supermercados</option>
+                            <option value="Suscripciones">Suscripciones</option>
+                            <option value="Turismo">Turismo</option>
+                            <option value="Varios">Varios</option>
+                            <option value="Venta Directa">Venta Directa</option>
+                            <option value="Verano">Verano</option>
+                            <option value="Vinculados a la Salud">Vinculados a la Salud</option>
+                            <option value="Vinotecas">Vinotecas</option>
+                            <option value="Vuelta Al Cole">Vuelta Al Cole</option>
+                        </select>
+                    </label> -->
+
+                    <div class="col-12 mt-4">
+                        <span class="bm-pildora-filtro">Buenos Aires</span>
+                        <span class="bm-pildora-filtro">Todas las Tarjetas</span>
+                    </div>
+
+
+                </form>
+            </div>
+        </section>
+
+        <!-- ***********  FIN DE  BUSCADOR   ***********  -->
+
+
+        <!-- ***********   NUEVA SECCIÓN CATEGORIAS     ***********  -->
+        <style>
+            #bm-section-categorias h5 {
+                font-size: 24px;
+                font-weight: 600;
+                color: #053575;
+                text-align: center;
+            }
+
+            #bm-section-categorias .bm-flexbox {
+                display: flex;
+                column-gap: 8px;
+                row-gap: 8px;
+                flex-wrap: wrap;
+            }
+
+            #bm-section-categorias .bm-categoria {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 136px;
+                min-height: 108px;
+                font-size: 16px;
+                font-weight: 400;
+                color: #053575;
+                line-height: normal;
+                border-radius: 16px;
+                background-color: #fff;
+                cursor: pointer;
+                padding: 8px;
+            }
+
+            #bm-section-categorias .bm-categoria.bm-categoria_seleccionada {
+                background-color: #DBE9FF;
+                border: 1px solid #053575;
+            }
+
+            #bm-section-categorias .bm-categoria.bm-categoria_seleccionada span {
+                font-weight: 600;
+            }
+
+            #bm-section-categorias .bm-categoria img {
+                max-width: 48px;
+                max-height: 48px;
+                margin-bottom: 6px;
+            }
+
+            #bm-section-categorias .bm-categoria span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 36px;
+                font-size: 16px;
+                font-weight: 400;
+                color: #053575;
+            }
+        </style>
+        <section class="mc-banner-beneficios no-padding section-beneficios" id="bm-section-categorias">
+            <div class="container py-4">
+                <h5 class="mb-3">Categorías</h5>
+
+                <article class="bm-flexbox">
+                    <div class="bm-categoria">
+                        <img src="generico-categoria.png" alt="Categoria X">
+                        <span>Automotor y combustible</span>
+                    </div>
+
+                    <div class="bm-categoria">
+                        <img src="generico-categoria.png" alt="Categoria X">
+                        <span>Electro y
+                            tecnología</span>
+                    </div>
+
+                    <div class="bm-categoria">
+                        <img src="generico-categoria.png" alt="Categoria X">
+                        <span>Entretenimiento</span>
+                    </div>
+
+                    <div class="bm-categoria">
+                        <img src="generico-categoria.png" alt="Categoria X">
+                        <span>Gastronomía</span>
+                    </div>
+
+                    <div class="bm-categoria">
+                        <img src="generico-categoria.png" alt="Categoria X">
+                        <span>Hogar</span>
+                    </div>
+
+                    <div class="bm-categoria">
+                        <img src="generico-categoria.png" alt="Categoria X">
+                        <span>Indumentaria</span>
+                    </div>
+
+                    <div class="bm-categoria">
+                        <img src="generico-categoria.png" alt="Categoria X">
+                        <span>Juguetes</span>
+                    </div>
+
+                    <div class="bm-categoria">
+                        <img src="generico-categoria.png" alt="Categoria X">
+                        <span>Mascotas</span>
+                    </div>
+
+                    <div class="bm-categoria">
+                        <img src="generico-categoria.png" alt="Categoria X">
+                        <span>Salud y belleza</span>
+                    </div>
+
+                    <div class="bm-categoria">
+                        <img src="generico-categoria.png" alt="Categoria X">
+                        <span>Shoppings
+                            y tiendas</span>
+                    </div>
+
+                    <div class="bm-categoria">
+                        <img src="generico-categoria.png" alt="Categoria X">
+                        <span>Supermercados</span>
+                    </div>
+
+                    <div class="bm-categoria">
+                        <img src="generico-categoria.png" alt="Categoria X">
+                        <span>Turismo</span>
+                    </div>
+
+                    <div class="bm-categoria">
+                        <img src="generico-categoria.png" alt="Categoria X">
+                        <span>Otros beneficios</span>
+                    </div>
+
+                    <div class="bm-categoria bm-categoria_seleccionada">
+                        <img src="generico-categoria.png" alt="Categoria X">
+                        <span>Todas las
+                            categorías</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- ***********  FIN DE CATEGORIAS  ***********  -->
+
+
+        <!-- ***********   CARDS BENEFICIOS - GRILLA + CARRUSEL     ***********  -->
+
+        <section class="section-beneficios" id="main-content beneficios-ppal">
+            <!--  TEST - NO VA MAS ESTE BLOQUE 
+                
+                <div class="container">
+
+                <div class="row" id="main-title">
+                    <h1>Oportunidades cerca tuyo:</h1>
+                    <script>
+                        let goProvincia = () => {
+                            $("#ubicacion").focus();
+                        }
+                    </script>
+                    <a href="javascript:void(0)" onclick="goProvincia()"><i><img src="/imagen/map-marker-blue.png"
+                                alt=""></i> ¿Querés indicar otra ubicación? </a>
+                </div>
+
+            </div> -->
+
+            <div id="main-beneficios-container" class="container">
+                <div class="cards-beneficios">
+                    <div class="row" style="align-items:center;justify-content:center;">
+
+
+                        <div id="gas" class=" card card-hide">
+                            <div class="card-body">
+                                <div class="card-rubro">
+                                    <span>Automotor y combustible</span>
+                                </div>
+
+                                <div class="card-logo-comercio"><img
+                                        src="https://beneficios-macro.s3.us-south.cloud-object-storage.appdomain.cloud/alba%20pinamar%20restaurant.png"
+                                        alt="undefined">
+                                </div>
+
+                                <!-- NUEVO H4 Y DIVS CONTENEDORES -->
+                                <div class="contenedor-texto">
+                                    <h4>Colegio Beata Maria Ana de Jesús </h4>
+                                </div>
+
+                                <div class="contenedor-texto">
+                                    <h5><b>20%</b> de ahorro y
+                                        <b>6 cuotas</b> sin
+                                        interés
+                                    </h5>
+                                </div>
+
+                                <a class="card-link" href="/beneficios/beneficio?id=187O BEER AND COFFEE">Ver más</a>
+
+                                <div class="card-cartera" style="background-color: #2E36D7;">General</div>
+                            </div>
+                        </div>
+
+                        <div id="gas" class=" card card-hide">
+                            <div class="card-body">
+                                <div class="card-rubro">
+                                    <span>Educación</span>
+                                </div>
+
+                                <div class="card-logo-comercio"><img
+                                        src="https://beneficios-macro.s3.us-south.cloud-object-storage.appdomain.cloud/1000rosanegra_052022.png"
+                                        alt="undefined">
+                                </div>
+
+                                <!-- NUEVO H4 Y DIVS CONTENEDORES -->
+                                <div class="contenedor-texto">
+                                    <h4>Colegio Beata Maria Ana de Jesús</h4>
+                                </div>
+
+                                <div class="contenedor-texto">
+                                    <h5><strong>30%</strong>
+                                        de ahorro</h5>
+                                </div>
+
+                                <a class="card-link" href="/beneficios/beneficio?id=187O BEER AND COFFEE">Ver más</a>
+
+                                <div class="card-cartera bg-color-0"><img
+                                        src="https://www.macro.com.ar/imagen/listing-logo-macro-selecta.png"
+                                        alt="Cartera Selecta" style="height: 15px;"></div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div id="gas" class=" card card-hide">
+                            <div class="card-body">
+                                <div class="card-rubro">
+                                    <span>Automotor y combustible</span>
+                                </div>
+
+                                <div class="card-logo-comercio"><img
+                                        src="https://beneficios-macro.s3.us-south.cloud-object-storage.appdomain.cloud/alba%20pinamar%20restaurant.png"
+                                        alt="undefined">
+                                </div>
+
+                                <!-- NUEVO H4 Y DIVS CONTENEDORES -->
+                                <div class="contenedor-texto">
+                                    <h4>Colegio Beata Maria Ana de Jesús </h4>
+                                </div>
+
+                                <div class="contenedor-texto">
+                                    <h5><b>20%</b> de ahorro y
+                                        <b>6 cuotas</b> sin
+                                        interés
+                                    </h5>
+                                </div>
+
+                                <a class="card-link" href="/beneficios/beneficio?id=187O BEER AND COFFEE">Ver más</a>
+
+                                <div class="card-cartera" style="background-color: #2E36D7;">General</div>
+                            </div>
+                        </div>
+
+                        <div id="gas" class=" card card-hide">
+                            <div class="card-body">
+                                <div class="card-rubro">
+                                    <span>Educación</span>
+                                </div>
+
+                                <div class="card-logo-comercio"><img
+                                        src="https://beneficios-macro.s3.us-south.cloud-object-storage.appdomain.cloud/1000rosanegra_052022.png"
+                                        alt="undefined">
+                                </div>
+
+                                <!-- NUEVO H4 Y DIVS CONTENEDORES -->
+                                <div class="contenedor-texto">
+                                    <h4>Colegio Beata Maria Ana de Jesús</h4>
+                                </div>
+
+                                <div class="contenedor-texto">
+                                    <h5><strong>30%</strong>
+                                        de ahorro</h5>
+                                </div>
+
+                                <a class="card-link" href="/beneficios/beneficio?id=187O BEER AND COFFEE">Ver más</a>
+
+                                <div class="card-cartera bg-color-0"><img
+                                        src="https://www.macro.com.ar/imagen/listing-logo-macro-selecta.png"
+                                        alt="Cartera Selecta" style="height: 15px;"></div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="row justify-content-center"><a class="btn btn-navy-main" data-toggle="collapse"
+                        href="#mas-beneficios" role="button" aria-expanded="false" aria-controls="mas-categorias">Ver
+                        más beneficios</a></div>
+            </div>
+        </section>
+
+
+    </div>
+
+
+    <!-- BOOTSTRAP TEST -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
