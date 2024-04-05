@@ -72,7 +72,6 @@
                 padding: 0px 30px;
             }
 
-
             @media only screen and (max-width: 992px) {
                 #buscador-beneficios .col-6 {
                     flex: 0 0 50%;
@@ -107,14 +106,22 @@
             <div class="container">
                 <form id="bm-beneficios-form" class="row mx-auto" action="/beneficios/resultados">
                     <div class="col-lg-8 col-xl-9">
-                        <input type="text" name="beneficios" placeholder="Buscá por nombre de comercio" id="buscar"
-                            class="ui-autocomplete-input" autocomplete="off">
+                        <!--  <input type="text" name="beneficios" placeholder="Buscá por nombre de comercio" id="buscar"
+                            class="ui-autocomplete-input" autocomplete="off"> -->
+                        <div class="input-group">
+                            <input type="text" name="beneficios" placeholder="Buscá por nombre de comercio" id="buscar"
+                                class="ui-autocomplete-input" autocomplete="off" />
+                            <button type="submit" class="btn-buscar">
+                                <span><img src="Vector.png" alt="Lupa de busqueda"></span>
+                            </button>
+                        </div>
                     </div>
 
 
                     <div class="col-6 d-lg-none pr-1">
                         <a class="btn-ubicacion" data-toggle="collapse" href="#mas-filtros" role="button"
-                            aria-expanded="false" aria-controls="mas-filtros">Filtros</a>
+                            aria-expanded="false" aria-controls="mas-filtros"> <img src="icono-filtros.png"
+                                alt="Filtros"> Filtros</a>
                     </div>
 
                     <div class="col-6 col-lg-4 col-xl-3 pl-1">
@@ -143,8 +150,8 @@
                                             <option value="CAPITAL FEDERAL">CAPITAL FEDERAL</option>
                                             <option value="BUENOS AIRES">BUENOS AIRES</option>
                                             <option value="CATAMARCA">CATAMARCA</option>
-                                            <option value="CHACO">CHACO</option>
-                                            <option value="CHUBUT">CHUBUT</option>
+                                            <option value="CHACO">Chaco</option>
+                                            <option value="CHUBUT">Chubut</option>
                                             <option value="CORDOBA">CORDOBA</option>
                                             <option value="CORRIENTES">CORRIENTES</option>
                                             <option value="ENTRE RIOS">ENTRE RIOS</option>
@@ -210,9 +217,9 @@
 
 
 
-                    <div class="col-12 mt-3 mt-lg-4" style="text-align: start;">
+                    <div class="col-12 mt-1 mt-lg-2" style="text-align: start;">
                         <span class="bm-pildora-filtro">Buenos Aires</span>
-                        <span class="bm-pildora-filtro">Todas las Tarjetas</span>
+                        <!-- <span class="bm-pildora-filtro">Todas las Tarjetas</span> -->
                     </div>
 
 
@@ -245,7 +252,7 @@
                 align-items: center;
                 justify-content: center;
                 text-align: center;
-                width: 136px;
+                width: 120px;
                 min-height: 108px;
                 font-size: 16px;
                 font-weight: 400;
@@ -283,7 +290,7 @@
         </style>
         <section class="mc-banner-beneficios no-padding section-beneficios d-none d-lg-block"
             id="bm-section-categorias">
-            <div class="container py-4">
+            <div class="container py-2">
                 <h5 class="mb-3">Categorías</h5>
 
                 <article class="bm-flexbox">
@@ -321,6 +328,11 @@
                     <div class="bm-categoria">
                         <img src="generico-categoria.png" alt="Categoria X">
                         <span>Juguetes</span>
+                    </div>
+
+                    <div class="bm-categoria">
+                        <img src="generico-categoria.png" alt="Categoria X">
+                        <span>Librerias</span>
                     </div>
 
                     <div class="bm-categoria">
@@ -386,6 +398,8 @@
             </div> -->
 
             <div id="main-beneficios-container" class="container">
+                <p class="mb-0 pl-md-3" style="color: #053575;">1346 resultados <!--  de <strong>Supermercados</strong> -->
+                </p>
                 <div class="cards-beneficios">
                     <div class="row" style="align-items:center;justify-content:center;">
 

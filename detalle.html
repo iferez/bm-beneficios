@@ -1,0 +1,61 @@
+<%@ taglib prefix="cs" uri="futuretense_cs/ftcs1_0.tld" %>
+    <%@ taglib prefix="ics" uri="futuretense_cs/ics.tld" %>
+        <%@ taglib prefix="render" uri="futuretense_cs/render.tld" %>
+            <%@ taglib prefix="fragment" uri="futuretense_cs/fragment.tld" %>
+                <cs:ftcs>
+                    <%-- Modulo/BeneficiosBeneficioDetalleTemplate --%>
+                        <%-- Record dependencies for the Template --%>
+                            <ics:if condition='<%=ics.GetVar("tid")!=null%>'>
+                                <ics:then>
+                                    <render:logdep cid='<%=ics.GetVar("tid")%>' c="Template" />
+                                </ics:then>
+                            </ics:if>
+                            <section id="beneficios-detail" class="back-grad-gray section-beneficios">
+                                <div class="container">
+                                    <div id="cards-beneficios" class="cards-beneficios">
+                                        <div class="scroll-tabs">
+                                            <div class="wrapper">
+                                                <ul class="nav nav-pills mb-3 list" id="pills-tab" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <a class="nav-link active blue" id="pills-general-tab"
+                                                            data-toggle="pill" href="#pills-general" role="tab"
+                                                            aria-controls="pills-general"
+                                                            aria-selected="true">General</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-general" role="tabpanel"
+                                                aria-labelledby="pills-general-tab">
+                                                <div class="card detail" style="background:#fff;">
+                                                    <div class="row card-body">
+                                                        <div class="col-md-4">
+                                                            <div class="pic-comercio">
+                                                                <img src="/imagen/loading_azul.svg" alt="comercio">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <h4></h4><span></span>
+                                                            <h3><strong></strong><br></h3>
+                                                            <p class=""></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <script>
+                                urlServicios.url_servicio_logo = "${asset.url_logo}";
+                                urlServicios.url_servicio_client_id = "1ccc929fe306b1334db5969cd4db4d19";
+                                urlServicios.url_servicio_promocion_detalle = "https://rgw.6ecd-3a9b81c9.us-south.ri1.apiconnect.appdomain.cloud/macro-beneficios/produccion/detalle-promociones/detalle-promocion?idBeneficio=";
+                                let urlParams = validateParams();
+                                if (urlParams.is) {
+                                    let id = urlParams.params.get("id");
+                                    initBeneficioDetalle("cards-beneficios", id);
+                                }
+                            </script>
+                </cs:ftcs>

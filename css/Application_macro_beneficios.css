@@ -436,10 +436,32 @@ section.section-beneficios {
 }
 
 #bm-beneficios-form ::-webkit-scrollbar-thumb {
-  background-color: #053575;
+  background-color: #DBE9FF;
   border-radius: 5px;
 }
 
+/* INPUT BUSCAR CON LUPA */
+#bm-beneficios-form #buscar {
+  border-radius: 8px 0px 0px 8px;
+}
+#bm-beneficios-form .btn-buscar {
+  height: 28px;
+  font-size: 12px;
+  background-color: #fff;
+  border: 1px solid #d8d7d6;
+  border-left: none;
+  border-radius: 0px 8px 8px 0;
+  margin: 0px;
+  padding: 0px 6px;
+  cursor: pointer;
+}
+
+#bm-beneficios-form .btn-buscar img {
+  width: 12px;
+  height: 12px;
+}
+
+/* BOTON UBICACION GEO Y MAS FILTROS */
 #bm-beneficios-form .btn-ubicacion {
   display: inline-block;
   width: 100%;
@@ -471,7 +493,7 @@ section.section-beneficios {
 
 #bm-beneficios-form .btn-ubicacion img {
   width: 12px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   margin-right: 6px;
 }
 
@@ -480,6 +502,7 @@ section.section-beneficios {
   margin: 0;
 }
 
+/* PILDORAS DE FILTROS ASIGNADOS */
 #bm-beneficios-form .bm-pildora-filtro {
   font-size: 12px;
   font-weight: 600;
@@ -509,20 +532,35 @@ section.section-beneficios {
     padding-top: 25px;
     padding-bottom: 25px;
   }
-  
+
   #bm-beneficios-form input,
   #bm-beneficios-form select {
     height: 52px;
     font-size: 16px;
     padding: 8px 16px;
-    border-radius: 12px;
+    border-radius: 16px;
+  }
+
+  #bm-beneficios-form #buscar {
+    border-radius: 16px 0px 0px 16px;
+  }
+
+  #bm-beneficios-form .btn-buscar {
+    height: 52px;
+    border-radius: 0px 16px 16px 0;
+    padding: 0px 12px;
+  }
+
+  #bm-beneficios-form .btn-buscar img {
+    width: auto;
+    height: auto;
   }
 
   #bm-beneficios-form .btn-ubicacion {
     height: 52px;
     font-size: 16px;
     padding: 8px 16px;
-    border-radius: 12px;
+    border-radius: 16px;
   }
 
   #bm-beneficios-form .btn-ubicacion img {
@@ -573,7 +611,7 @@ section.section-beneficios {
 }
 
 .cards-beneficios {
-  padding-bottom: 45px;
+  padding-bottom: 16px;
   padding-top: 20px;
 }
 
@@ -590,9 +628,9 @@ section.section-beneficios {
   text-align: center;
   font-size: 0.85em;
   border-radius: 6px;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 1);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 1);
-  box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 1);
+  -webkit-box-shadow: 2px 0px 10px 0px #00000020;
+  -moz-box-shadow: 2px 0px 10px 0px #00000020;
+  box-shadow: 2px 0px 10px 0px #00000020;
   /* padding: 20px 5px;  TEST */
   padding: 8px 6px 26px 6px;
   /* padding-top: 8px; TEST */
@@ -713,7 +751,7 @@ section.section-beneficios {
   font-size: 16px !important;
   background-color: #053575 !important;
   color: #fff !important;
-  padding: 8px 24px !important;
+  padding: 4px 24px !important;
   transition: 0.3s ease !important;
 }
 .btn-navy-main:hover {
@@ -736,6 +774,9 @@ section.section-beneficios {
   /* NUEVO TODA LA QUERY */
   .card-hide {
     width: 230px;
+  }
+  .cards-beneficios {
+    padding-bottom: 24px;
   }
   .cards-beneficios .card {
     font-size: 16px;
@@ -857,7 +898,8 @@ section#beneficios-detail {
   display: block;
 }
 
-.cards-beneficios .card.detail .pic-comercio {
+/* TEST
+ .cards-beneficios .card.detail .pic-comercio {
   display: block;
   clear: both;
   min-height: unset;
@@ -870,7 +912,7 @@ section#beneficios-detail {
 }
 .cards-beneficios .card.detail .pic-comercio img {
   width: 90%;
-}
+} */
 
 .cards-beneficios .card.detail .card-title {
   font-size: 2rem;
@@ -936,18 +978,20 @@ section#beneficios-detail {
   margin: 10px;
 }
 
-.cards-beneficios .info-extendida {
+/* TEST
+ .cards-beneficios .info-extendida {
   text-align: right;
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-}
+} */
+/* TEST 
 .cards-beneficios .info-extendida a {
   color: #666;
   font-size: 16px;
   padding: 5px;
   margin: 5px;
-}
+} */
 
 .mc-cft-beneficios {
   margin-top: 35px;
@@ -984,7 +1028,8 @@ section#beneficios-detail {
 /* *******  SHARE BOX   ******* **/
 
 .share-box {
-  background-color: #666 !important;
+  /*  background-color: #666 !important; */
+  background-color: #053575;
   width: fit-content;
   border-radius: 6px;
   margin-top: 25px;
@@ -1005,7 +1050,8 @@ section#beneficios-detail {
   margin-bottom: 0;
 }
 .cards-beneficios .card .share-box {
-  background-color: #666 !important;
+  /* background-color: #666 !important; */
+  background-color: #053575;
   width: 40%;
   border-radius: 6px;
   top: 10px;
@@ -1014,7 +1060,8 @@ section#beneficios-detail {
   text-align: center !important;
 }
 .cards-beneficios .detail .share-box {
-  background-color: #666 !important;
+  /*  background-color: #666 !important; */
+  background-color: #053575;
   width: fit-content;
   border-radius: 6px;
   top: 35px;
@@ -1022,6 +1069,7 @@ section#beneficios-detail {
   right: 15px;
   text-align: center !important;
   left: unset;
+  z-index: 99;
 }
 
 /* ****** nav pills/tabs detalle beneficio ****** */
@@ -1602,7 +1650,6 @@ section#beneficios-detail {
 .no-padding {
   padding: 0 !important;
 }
-
 
 @keyframes loading {
   to {
